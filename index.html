@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="logo">
+                <img src="logo.png" alt="image">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a> 
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>               
+            </div>
+        </nav>
+        <div class="content">
+            <div class="opening" id="home">
+                <h2>Hi, I am <span style="color:rgb(75, 168, 158);">Ananya Gupta</span></h2>
+                <p>An enthusiastic <span style="color:rgb(75, 168, 158)">Frontend Developer</span> transforming ideas into stunning digital experiences. Let's create something amazing!</p>
+            </div>
+            <div class="social-links" id="contact">
+                <a href="https://github.com/ananyaguptacodes" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ananyagupta722006@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/ananyaguptacodes/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="about" id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="my pic.jpg" alt="My Picture">
+                    <div class="about-text">
+                        <p>Hi! I’m Ananya Gupta, a passionate Computer Science student with a keen interest in frontend development and creative problem-solving. I enjoy transforming ideas into responsive, user-friendly digital experiences using HTML, CSS, and JavaScript, and I'm currently expanding my skills with React, Tailwind, and the MERN stack.<br><br>I’m also deeply focused on Data Structures and Algorithms, aiming to crack top internships and roles at leading tech companies. Beyond development, I have a growing interest in integrating AI into modern web applications.<br><br>What drives me is a mix of curiosity, creativity, and the desire to build solutions that genuinely help people. When I'm not coding, you’ll probably find me brainstorming projects, learning new tools, or exploring ideas that blend tech and innovation.<br><br>I’m open to exciting opportunities and collaborations. Feel free to reach out!</p>
+                        <a href="https://drive.google.com/file/d/1zV-Mqy2EkbASy9hUs1Zv_q7DUGxr1Z2B/view?usp=drivesdk" target="_blank">View Resume💼</a>
+                    </div>  
+                </div>                
+            </div>
+            <div class="skills" id="skills">
+                <h2>My Skills</h2>
+                <ul>
+                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript (currently learning)</li>
+                    <li><strong>Backend (upcoming):</strong> Node.js, Express</li>
+                    <li><strong>Programming Languages:</strong> C, C++</li> 
+                    <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+                    <li><strong>DSA & Problem Solving:</strong> Practicing on LeetCode and Code360</li>
+                </ul>
+            </div>
+            <div class="projects" id="projects">
+                <h2 class="heading">Recent <span style="color: rgb(75, 168, 158);">Projects</span></h2>
+                <div class="project-grid">
+                    <div class="project1">
+                        <img src="project 1.png" alt="Project 1">
+                        <h2>Personal Portfolio</h2>
+                        <p>A fully responsive personal portfolio to showcase my projects, skills, and resume. Built using HTML, CSS and basic JavaScript with a focus on modern layout, clean UI, and custom design.</p>
+                    </div>
+                    <div class="project2">
+                        <a href="https://ananyaguptacodes.github.io/StudySync/" target="_blank"><img src="project 2.png" alt="Project 2"></a>
+                        <h2> StudySync - Landing Page</h2>
+                        <p>A clean and modern landing page concept for an online study platform. Built using HTML and CSS to practice layout, typography, and responsiveness.</p>
+                    </div>
+                    <div class="project3">
+                        <a href="https://ananyaguptacodes.github.io/Recipes-ki-Duniya/" target="_blank"><img src="project 3.png" alt="Project 3"></a>                     
+                        <h2>Recipe Website - Landing Page</h2>
+                        <p>A visually appealing recipe landing page showcasing featured dishes. Focuses on layout design, image integration, and mobile-friendly structure.</p>
+                    </div>
+                    <!-- <div class="project4">
+                        <img src="project 4.png" alt="Project 4">
+                        <h2> Blog Website – Landing Page</h2>
+                        <p>A basic blog-style landing page with article previews and sections. Designed to experiment with content structure, font styling, grids, and spacing using HTML & CSS.</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer1">
+                    <div class="footer-links">
+                        <a href="#home">Home</a> 
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="social-footer">
+                        <p>Social Media Handles:</p>
+                        <div class="social-footer-links">
+                            <a href="https://github.com/ananyaguptacodes" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="mailto:ananyagupta722006@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/ananyaguptacodes/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <p>Developed and Designed by me.</p>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show-nav");
+        });
+    </script>
+
+</body>
+</html>
